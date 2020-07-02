@@ -23,24 +23,27 @@ body{
     left: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3), 0 5px 20px 0 rgba(0,0,0,0.8);
 }
-.calc p{
+.calc input{
     text-align: right;
 	height: 20px;
-	margin: 0 20px;
-    /* padding-top: 20px; */
+    background-color: transparent;
+    border: none;
+    padding-top: 20px;
+}
+.calc input:focus{
+    outline: none;
 }
 .calc #history{
     font-size: 17px;
     color: #919191;
-    padding-top: 20px;
     
 }
 .calc #result{
+	height: 30px;
     font-size: 35px;
     font-family: cursive;
     font-weight: bold;
-    overflow: hidden;
-    /* size: 30px; */
+    
 }
 .calc button{
     width: 55px;

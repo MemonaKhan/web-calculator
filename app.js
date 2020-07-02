@@ -1,19 +1,19 @@
 
 function getHistory() {
-    return document.getElementById("history").innerText;
+    return document.getElementById("history").value;
 }
 function setHistory(num) {
-    document.getElementById("history").innerText = num;
+    document.getElementById("history").value = num;
 }
 function getResult() {
-    return document.getElementById("result").innerText;
+    return document.getElementById("result").value;
 }
 function setResult(num) {
-    document.getElementById("result").innerText += num;
+    document.getElementById("result").value += num;
 }
 function clearResult() {
-    document.getElementById("result").innerText = "";
-    document.getElementById("history").innerText = "";
+    document.getElementById("result").value = "";
+    document.getElementById("history").value = "";
 }
 function backSpace() {
     var result = getResult();
