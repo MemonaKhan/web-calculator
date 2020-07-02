@@ -1,42 +1,46 @@
 body{
     background-image: url("img/background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     text-align: center;
     font-family: 'Open Sans',sans-serif;
+    background-position: center center;
+    background-attachment: fixed;
 }
 .background{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url("img/inner-background.jpg");
-    background-repeat: no-repeat;
     margin: 70px auto;
-    width: 1000px;
-    height: 550px;
-    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .calc{
-    padding: 25px;
+    padding: 2%;
     width: 300px;
     height: 475px;
     background-color: gainsboro;
     position: relative;
-    top: 13px;
-    left: 500px;
+    top: 10%;
+    left: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3), 0 5px 20px 0 rgba(0,0,0,0.8);
 }
 .calc p{
     text-align: right;
 	height: 20px;
 	margin: 0 20px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 .calc #history{
     font-size: 17px;
-	color: #919191;
+    color: #919191;
+    padding-top: 20px;
+    
 }
 .calc #result{
     font-size: 35px;
     font-family: cursive;
     font-weight: bold;
+    overflow: hidden;
+    /* size: 30px; */
 }
 .calc button{
     width: 55px;
@@ -61,9 +65,16 @@ body{
 .calc .zero{
     width: 127px;
 }
-.calc table{
-    margin-top: 30px;   
+/* .calc table{
+    margin-top: 0px; 
+    border-top: 0px; 
+    top: 30px;
+    bottom: 0px;
 }
+.calc tbody{
+    margin: 0px;
+    border: 0px;
+} */
 .calc .nums{
     background-color: rgba(232, 63, 99,0.8);
 }
