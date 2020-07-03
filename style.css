@@ -72,16 +72,6 @@ body{
 .calc .zero{
     width: 127px;
 }
-/* .calc table{
-    margin-top: 0px; 
-    border-top: 0px; 
-    top: 30px;
-    bottom: 0px;
-}
-.calc tbody{
-    margin: 0px;
-    border: 0px;
-} */
 .calc .nums{
     background-color: rgba(232, 63, 99,0.8);
 }

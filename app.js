@@ -27,15 +27,32 @@ function operation(opr) {
     var result = getResult();
     var history = getHistory();
     if (result != "") {
-        history += result;
+        console.log("history+=reult " + history);
         if (opr == '=') {
+            history += result;
             clearResult();
             setResult(eval(history));
             setHistory(history);
         }
         else {
-            clearResult();
+            console.log("before clear result " + history);
+            if (history[history.length - 1] != opr) {
+                if (eval(history) == result) {
+                    clearResult();
+                    history = result;
+                    console.log("after if " + history);
+                }
+                else {
+                    history += result;
+                    clearResult();
+                }
+            }
+            else{
+                history += result;
+                    clearResult();
+            }
             history += opr;
+            console.log("history += opr " + history);
             setHistory(history);
         }
 
