@@ -27,23 +27,27 @@ body{
     text-align: right;
 	height: 20px;
     background-color: transparent;
-    border: none;
     padding-top: 20px;
 }
-.calc input:focus{
+.calc #history:focus{
     outline: none;
+}
+.calc #result:focus{
+    border-color: navy;
 }
 .calc #history{
     font-size: 17px;
     color: #919191;
-    
+    border: none;
 }
 .calc #result{
 	height: 30px;
     font-size: 35px;
     font-family: cursive;
     font-weight: bold;
-    
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: black;
 }
 .calc button{
     width: 55px;
@@ -87,4 +91,11 @@ body{
 }
 .calc .equals, .calc .zero{
     background-color: rgba(232, 175, 149,0.8);
+}
+
+@media (max-width:680px){
+    .calc{
+        margin: auto;
+        left: 0px;
+    }
 }
